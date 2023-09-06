@@ -10,7 +10,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "terraform/¥"
+        working-directory: "terraform/"
 
     steps:
       - name: Check out source repository
@@ -28,4 +28,4 @@ jobs:
       - name: Plan terraform
         id: plan
         run: |
-          terraform plan -no-color -var="airbyte_cloud_api_key=$AIRBYTE_CLOUD_API_KEY"  -var="credentials_json=$CREDENTIALS_JSON"
+          terraform plan -no-color -var="airbyte_cloud_api_key=$AIRBYTE_CLOUD_API_KEY" -var="credentials_json=$CREDENTIALS_JSON"
