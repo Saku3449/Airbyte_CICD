@@ -7,11 +7,6 @@ jobs:
   ci:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        shell: bash
-        working-directory: subdir
-
     steps:
       - name: Check out source repository
         uses: actions/checkout@v3
