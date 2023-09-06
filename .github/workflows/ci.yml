@@ -28,4 +28,4 @@ jobs:
       - name: Plan terraform
         id: plan
         run: |
-          terraform apply -input=false --auto-approve -var="airbyte_cloud_api_key=$AIRBYTE_CLOUD_API"  -var="credentials_json=$CREDENTIALS"
+          terraform apply -input=false --auto-approve -var="airbyte_cloud_api_key=$AIRBYTE_CLOUD_API_KEY"  -var="credentials_json=$CREDENTIALS_JSON"
