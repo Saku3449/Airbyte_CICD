@@ -23,7 +23,7 @@ jobs:
       - name: Plan terraform
         id: plan
         run: |
-          terraform plan -no-color -var="airbyte_api_key=$AIRBYTE_API_KEY" -var="access_key=$EXCHANGE_RATE_API_KEY" -var="credentials_json=$CREDENTIALS_JSON"
+          terraform plan -no-color -var="airbyte_cloud_api_key=$AIRBYTE_CLOUD_API_KEY"  -var="credentials_json=$CREDENTIALS_JSON"
         env:
           AIRBYTE_API_KEY: ${{secrets.AIRBYTE_API_KEY}}
           EXCHANGE_RATE_API_KEY: ${{secrets.EXCHANGE_RATE_API_KEY}}
