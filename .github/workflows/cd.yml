@@ -29,7 +29,3 @@ jobs:
         id: apply
         run: |
           terraform plan -no-color -var="airbyte_cloud_api_key=$AIRBYTE_CLOUD_API_KEY"  -var="credentials_json=$CREDENTIALS_JSON"
-        env:
-          AIRBYTE_API_KEY: ${{secrets.AIRBYTE_API_KEY}}
-          EXCHANGE_RATE_API_KEY: ${{secrets.EXCHANGE_RATE_API_KEY}}
-          CREDENTIALS_JSON: ${{secrets.CREDENTIALS_JSON}}
