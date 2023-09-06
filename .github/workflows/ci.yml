@@ -10,7 +10,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: "terraform/data-infrastructure-airbyte/dev"
+        working-directory: "terraform"
 
     steps:
       - name: Check out source repository
