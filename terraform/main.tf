@@ -11,8 +11,7 @@ module "bigquery" {
   source       = "./modules/destinations"
   workspace_id = module.airbyte_workspace.workspace_id
   # credentials_json = var.credentials_json
-  credentials_json = file("./credentials.json")
-  project_id       = var.project_id
+  project_id = var.project_id
 }
 
 module "pokeapi_bigquery" {

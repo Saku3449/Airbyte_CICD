@@ -16,6 +16,6 @@ variable "bigquery_config" {
 variable "dataset_id" {
   type        = string
   description = "The default BigQuery Dataset ID"
-  default     = "colossus__source__airbyte_landing"
+  default     = "airbyte_test"
 }
 

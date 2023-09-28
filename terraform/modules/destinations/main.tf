@@ -10,7 +10,6 @@ resource "airbyte_destination_bigquery" "my_destination_bigquery" {
       }
     }
     project_id = var.project_id
-    # project_id = "compact-system-398013"
   }
   name         = "BiqQurey"
   workspace_id = var.workspace_id
