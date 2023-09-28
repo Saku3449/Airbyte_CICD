@@ -8,10 +8,10 @@ module "pokeapi" {
 }
 
 module "bigquery" {
-  source       = "./modules/destinations"
-  workspace_id = module.airbyte_workspace.workspace_id
-  # credentials_json = var.credentials_json
-  project_id = var.project_id
+  source           = "./modules/destinations"
+  workspace_id     = module.airbyte_workspace.workspace_id
+  credentials_json = var.credentials_json
+  project_id       = var.project_id
 }
 
 module "pokeapi_bigquery" {
